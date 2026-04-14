@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hotel booking</title>
+</head>
+<body>
+    <h1>Welcome to the hotel</h1>
+    <p>Here you can book your hotel room:</p>
+    <form id="hotel_booking" method="POST" class="flex flex-col bg-[oklch(90.1%_0.058_230.902)] w-[400px] border-2 rounded-md ml-[15px] p-[5px]">
+        <div>
+            Room Number: 
+            <select id="room_number" name="room_number" class="border-2 rounded-md mb-[6px]">
+                <option>101</option>
+                <option>102</option>
+            </select>
+        </div>
+        <div>Date: <input type="date" class="border-2 rounded-md mb-[6px]"></div>
+        <div>Other Info: <input type="text" class="border-2 rounded-md mb-[6px]"></div>
+        <button id="ok-btn" type="button" class="border-2 rounded-md w-[50px]">Ok</button>
+    </form>
+    <script src="../scripts/main.js" type="module"></script>
+</body>
+</html>
