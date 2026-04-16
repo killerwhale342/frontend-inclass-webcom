@@ -30,7 +30,7 @@ export async function loadBookingList() {
 };
 export async function booking() {
     if(!firstName.value || !lastName.value) return;
-    if ((!dateFrom.value || !dateTo.value) || (dateFrom.value > dateTo.value)) return;
+    if((!dateFrom.value || !dateTo.value) || (dateFrom.value > dateTo.value)) return;
     const guestRes = await fetch(`${API_URL}/guests`, {
         method: "POST",
         headers: {
