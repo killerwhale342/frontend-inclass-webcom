@@ -24,7 +24,7 @@ export async function loadBookingList() {
     bookingList.innerHTML = "";
     bookings.forEach(booking => {
         const li = document.createElement("li");
-        li.textContent = `Room: ${booking.room_number} - ${booking.first_name} ${booking.last_name} - Date: ${booking.date_from} - ${booking.date_to}`;
+        li.textContent = `Room: ${booking.room_number} - ${booking.first_name} ${booking.last_name} --- Date: ${booking.date_from} - ${booking.date_to} (${booking.nights} nights) --- Total price: €${booking.total_price}`;
         bookingList.appendChild(li);
     });
 };

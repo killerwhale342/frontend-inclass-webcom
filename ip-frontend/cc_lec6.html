@@ -7,7 +7,7 @@
     <script type="module" src="../scripts/main.js" defer></script>
     <title>Hotel booking</title>
 </head>
-<body class="p-[20px]">
+<body class="p-[20px] h-[1000px]">
     <h1>Welcome to the hotel</h1>
     <p>Here you can book your hotel room:</p>
     <form id="hotel_booking" class="flex flex-col bg-[oklch(90.1%_0.058_230.902)] w-[400px] border-2 rounded-md ml-[15px] p-[5px]">
@@ -39,5 +39,10 @@
     </form>
     <h2>Bookings:</h2>
     <ul id="booking_list"></ul>
+    <form id="guest_booking_list" class="flex flex-col bg-[oklch(90.1%_0.058_230.902)] w-[400px] border-2 rounded-md mt-[15px] ml-[15px] p-[5px]">
+        <div>
+            Guest: <select id="guest_select" class="border-2 rounded-md"></select>
+        </div>
+    </form>
 </body>
 </html>
