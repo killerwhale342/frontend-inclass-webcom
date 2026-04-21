@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="../scripts/main.js" defer></script>
+    <title>Hotel booking</title>
+</head>
+<body class="p-[20px] h-[1000px]">
+    <h1>Welcome to the hotel</h1>
+    <p>Here you can book your hotel room:</p>
+    <form id="hotel_booking" class="flex flex-col bg-[oklch(90.1%_0.058_230.902)] w-[400px] border-2 rounded-md ml-[15px] p-[5px]">
+        <div>
+            First Name:
+            <input id="first_name" type="text" class="pl-2 border-2 rounded-md mb-[6px]">
+        </div>
+        <div>
+            Last Name:
+            <input id="last_name" type="text" class="pl-2 border-2 rounded-md mb-[15px]">
+        </div>
+        <div>
+            Room Number: 
+            <select id="room_number" name="room_number" class="border-2 rounded-md mb-[15px]"></select>
+        </div>
+        <div class="flex flex-col mb-[15px]">
+            Date Select:
+            <div>
+                From: <input id="date_from" type="date" class="border-2 rounded-md mb-[6px]">
+            </div>
+            <div>
+                To: <input id="date_to" type="date" class="border-2 rounded-md mb-[6px]">
+            </div> 
+        </div>
+        <div>
+            Other Info: <input id="guest_request" type="text" placeholder="guest_request" class="pl-2 border-2 rounded-md mb-[15px]">
+        </div>
+        <button id="ok-btn" type="button" class="border-2 rounded-md w-[50px]">Ok</button>
+    </form>
+    <h2>Bookings:</h2>
+    <ul id="booking_list"></ul>
+    <!-- <form id="guest_booking_list" class="flex flex-col bg-[oklch(90.1%_0.058_230.902)] w-[400px] border-2 rounded-md mt-[15px] ml-[15px] p-[5px]">
+        <div>
+            Guest: <select id="guest_select" class="border-2 rounded-md"></select>
+        </div>
+    </form> -->
+</body>
+</html>
