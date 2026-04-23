@@ -51,7 +51,7 @@ export async function loadBookingList() {
                     <option value="3">⭐⭐⭐</option>
                     <option value="4">⭐⭐⭐⭐</option>
                     <option value="5">⭐⭐⭐⭐⭐</option>
-                </select>
+                </select> (Rating: ${booking.stars || "-"}⭐)
             </li>
         `;
     });
